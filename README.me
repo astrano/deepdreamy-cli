@@ -1,0 +1,12 @@
+#deepdreamy-cli
+
+This tool can be used alongside deepdream and should make batch processing images easier.  A quick and dirty CLI that will allow you to easily change from one model or filter to another, processing one or more images and automatically saving them with a unique filename.
+
+In addition to the Python script there is also models.json, an easily editable file with the path information for correlating caffe models.  When you add a new model to caffe just fill it in to models.json and you're ready to use it based on the name in its deploy .prototxt file.
+
+example usage:
+python dream.py img.jpg
+
+python dream.py img1.jpg img2.jpg --layer=inception_5b/output
+
+python dream.py img.jpg --model=Places205-CNN --layer=conv1

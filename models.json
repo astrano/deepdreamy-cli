@@ -1,0 +1,18 @@
+{
+  "caffe-models-path": "../caffe/models/",
+  "models":{
+    "Places205-CNN" : {
+      "path": "placesCNN_upgraded",
+      "net_fn": "places205CNN_deploy_upgraded.prototxt",
+      "param_fn": "places205CNN_iter_300000_upgraded.caffemodel"
+    }, "GoogleNet": {
+      "path": "bvlc_googlenet",
+      "net_fn": "deploy.prototxt",
+      "param_fn": "bvlc_googlenet.caffemodel"
+    }, "Places205-CNN": {
+      "path": "placesCNN_upgraded",
+      "net_fn": "places205CNN_deploy_upgraded.prototxt",
+      "param_fn": "places205CNN_iter_300000_upgraded.caffemodel"
+    }
+  }
+}
